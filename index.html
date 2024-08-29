@@ -9,14 +9,108 @@
     </head>
 
     <body>
+        <nav>
+            <!--INI Logo-->
+            <header>
+                <div class="logo-icon"></div>
+            </header>
 
+            <!--INI Kolom Akses-->
+        <section class="nav-container">
+            <a href="#Home" class="nav_item">Home</a>
+            <a href="#Our Profile" class="nav_item">Our Profile</a>
+            <a href="#Achivement" class="nav_item">Achivement</a>
+            <a href="#Message Us" class="nav_item">Form Data Diri</a>
+        </section>
+        </nav>
+        <hr>
 
+            <!--INI Perkenalan Dan Input Nama-->
+            <main>
+            <article>
+                <h2 id="Home">HI <span id="name"></span> Welcome To Website</h2>
+                <input class="style1" type ="text" placeholder="masukkan nama anda" id="name-input">
+                <button id="submit">Kirim</button>
+                <P id="error-name" style="color: red; font-size: 30px;"></P>
 
+                <!--INI Judul Dan Sejarah-->
+                <H1 style="text-align: center; font-size: 30px;">SEKOLAH KEJURUAN TINGGI</H1>
+                <p style="font-size: 20px;">SEKOLAH KEJURUAN TINGGI didirikan pada tahun 1985 dimana sebelumnya pendidikan sangat minim. Dan 
+                sampai ada satu orang yang sampai sekarang belum diketahui namanya yang telah membuat bangunan ini untuk meningkatkan kualitas pendidikan.
+                Bangunan ini sampai sekarang masih bertahan dengan siswa yang telah ditampung sebanyak 200 anak murid untuk saat ini</p>
 
+                <!--INI VISI Dan MISI-->
+            <p style="text-align: center; font-size: 30px;"><b>VISI - MISI</b></p>
+            <p style="font-size: 20px;">VISI :</p>
+            <ol type="1"> 
+            <li>Terwujudnya insan yang berkarakter, unggul dalam prestasi, berwawasan global, dan peduli lingkungan</li>
+            <li>Terwujudnya pendidikan yang mengedepankan karakter pembentukan Profil Pelajar Pancasila</li>
+            <li>Terwujudnya prestasi peserta didik yang unggul dalam akademik dan non akademik</li>
+            <br>    
+            <p style="font-size: 20px;">Misi :</p>
+            <ol type="1"> 
+            <li>Memasukkan mata pelajaran pendidikan lingkungan hidup di sekolah dan membangun sarana dan prasarana kebersihan yang memadai.</li>
+            <li>Menyediakan beragam ekstrakurikuler untuk mengembangkan bakat dan prestasi siswa-siswi.</li>
+            <li>Menyiapkan tenaga pendidik yang profesional dan berkualitas untuk proses belajar mengajar di sekolah.</li>
 
+            <!--INI Gambar Banner-->
+            <div class="banner-img"></div>             
+            </article>
+            <hr>
+           
+            <!--INI Bagian2 Profile-->
+            <section>
+                <header><h1 id="Our Profile">Our Profile</h1></header>
+                <section class="banner-imgcontainer">
+                <div class="profile-item">
+                <div class="banner-img2"></div>
+                <h2>Profesional Teacher</h2>
+                <p>Disini akan diperlihatkan guru-guru profesional</p>
+            </div>
+
+                <div class="profile-item">
+                <div class="banner-img3"></div>
+                <h2>Sport Field</h2>
+                <p>Disini akan diperlihatkan informasi tentang seluruh lapangan</p>
+            </div>
+            
+            <div class="profile-item">
+                <div class="banner-img4"></div>
+                <h2>Classroom</h2>
+                <p>Disini akan diperlihatkan informasi tentang pembagian kelas</p>
+            </div>
+            </section>
+            <hr>
+        </main>
+            
+            <!--INI Bagian Penginputan Form-->
+            <footer> 
+                <h1 id="Message Us">Form Data Diri</h1>
+                <form>
+                    <label for="Name"> Nama : </label>
+                    <input id="Name" type="text"/>
+                    <br>
+                    <label for="Tanggal Lahir"> Tanggal Lahir : </label>
+                    <input id="Tanggal Lahir" type="date"/>
+                    <br>
+                    <label for="Jenis Kelamin"> Jenis Kelamin :</label>
+                    <select id="Jenis Kelamin">
+                    <option> Laki-Laki </option>
+                    <option> Perempuan </option> 
+                </select>
+                    <textarea id="Text Area" style="resize: none;" rows="12" cols="64" placeholder="Ketik Pesan Ingin Disampaikan"></textarea>
+                    <br>
+                    <button type="button" id = "result" onclick="formValidate()">Submit</button>   
+                    
+                    <!--INI Hasil Penginputan-->
+                    <h3>Nama:</h3><p class="output" id="output 1"></p>
+                    <h3>Tanggal Lahir:</h3><p class="output" id="output 2"></p>
+                    <h3>Jenis Kelamin:</h3><p class="output" id="output 3"></p>
+                    <h3>Pesan:</h3><p class="output" id="output 4"></p>
+
+                </form>
+                  
+            </footer>
+            <script src="js/scirpt.js"></script>
     </body>
-
-
-
-
 </html>
